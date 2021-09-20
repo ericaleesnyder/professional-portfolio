@@ -4,11 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
+<!--
+TODO: Include About Me, My Work, and Contact Me in a functional Nav bar that SCROLLS to the appropriate spot on the page
+TODO: Each section includes titled images of the applications with the FIRST being larger than the others
+TODO: Link web pages so that when images are clicked int launches the site 
+TODO: Adapt the viewport based on screen size
+-->
+
 <body>
-    
+    <header>
+        <h1>Erica Snyder</h1>
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#my-work">My Work</a>
+            <a href="#contact-me">Contact Me</a>
+            <a href="#resume">Resume</a>
+        </nav>
+        <!-- TODO: Add image/avatar of myself - decide if in header or in about me-->
+    </header>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam repellendus, ut accusamus tempore sit? Ratione debitis inventore saepe cum!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor labore consectetur eos illo odit distinctio, odio quia natus, animi voluptatem quis nesciunt, suscipit nobis culpa quo iure. Ad facilis quidem ex praesentium, vero perferendis veritatis!
+            </p>
+        </div>
+    </section>
+
+    <section id="my-work">
+        <div>
+            <h3>Horiseon Marketing Company</h3>
+            <p>HTML/CSS Refactoring</p>
+            <a href="https://ericaleesnyder.github.io/horiseon_marketing_company/">
+                <img src="assets/images/coming-soon.jpg" alt="coming soon">
+            </a>
+        </div>
+        <div>
+            <h3>Project 2</h3>
+            <p>Project description</p>
+            <a href="#">
+                <img src="assets/images/coming-soon-2.jpg" alt="coming soon">
+            </a>
+        </div>
+        <div>
+            <h3>Project 3</h3>
+            <p>Project description</p>
+            <a href="#">
+                <img src="assets/images/coming-soon-3.jpg" alt="coming soon">
+            </a>
+        </div>
+        <div>
+            <h3>Project 4</h3>
+            <p>Project description</p>
+            <a href="#">
+                <img src="assets/images/coming-soon-4.jpg" alt="coming soon">
+            </a>
+        </div>
+        <div>
+            <h3>Project 5</h3>
+            <p>Project description</p>
+            <a href="#">
+                <img src="assets/images/coming-soon-5.jpg" alt="coming soon">
+            </a>
+        </div>
+    </section>
+
+    <section id="contact-me">
+        <ul>
+            <li>(408) 966-4467</li>
+            <li><a href="mailto: ericaleesnyder@gmail.com">ericaleesnyder@gmail.com</a></li>
+            <li><a href="https://github.com/ericaleesnyder">github</a></li>
+            <li><a href="https://www.linkedin.com/in/ericaleesnyder">linkedin</a></li>
+        </ul>
+    </section>
 </body>
 </html>

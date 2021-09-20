@@ -1,0 +1,12 @@
+/*
+TODO: Include About Me, My Work, and Contact Me in a functional Nav bar that SCROLLS to the appropriate spot on the page
+TODO: Each section includes titled images of the applications with the FIRST being larger than the others
+TODO: Link web pages so that when images are clicked int launches the site 
+TODO: Adapt the viewport based on screen size
+*/
+
+/* starting with mobile layout then moving to tablet and desktop with media queries */
+
+html {
+    scroll-behavior: smooth;
+}
