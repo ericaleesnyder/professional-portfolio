@@ -16,6 +16,9 @@ body {
     position: relative;
 }
 
+main {
+    margin-left: 20px
+}
 .hero-image {
     height: 200px;
     width: 100%;
@@ -57,6 +60,7 @@ section {
 p {
     padding: 10px 0
 }
+
 .nav-link {
     display: inline;
     transition: all 0.3s ease-in-out;
@@ -73,6 +77,8 @@ nav a {
     border-radius: 8px;
 }
 
-.project-1 {
-    
+a img {
+    width: 100%;
+    border: dashed 2px pink;
+    max-height: 200px;
 }
