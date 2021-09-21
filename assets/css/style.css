@@ -17,8 +17,9 @@ body {
 }
 
 main {
-    margin-left: 20px
+    margin-left: 20px;
 }
+
 .hero-image {
     height: 200px;
     width: 100%;
@@ -66,12 +67,14 @@ p {
     transition: all 0.3s ease-in-out;
     padding: .25rem .5rem;
 }
+
 nav a {
     font-variant: small-caps;
     line-height: 30px;
     text-decoration: none;
     color: white;
 }
+
 .nav-link:hover {
     box-shadow: inset 0px 0px 8px white, 0 0 10px white;
     border-radius: 8px;
@@ -79,6 +82,22 @@ nav a {
 
 a img {
     width: 100%;
-    border: dashed 2px pink;
+    border: solid 2px pink;
     max-height: 200px;
+}
+
+#my-work {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    position: relative;
+}
+
+.card section{
+    position: absolute;
+    bottom: 20px;
+    border: 2px dashed pink;
+    background-color: rgba(255, 255, 255, 0.85);
 }
