@@ -16,8 +16,9 @@ body {
     position: relative;
 }
 
+/* for mobile setting the margin to none */
 main {
-    margin-left: 20px;
+    margin-left: none;
 }
 
 .hero-image {
@@ -84,6 +85,8 @@ a img {
     width: 100%;
     border: solid 2px pink;
     max-height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
 }
 
 #my-work {
@@ -91,12 +94,28 @@ a img {
     flex-direction: column;
 }
 
-.card {
-    position: relative;
+#contact-me li {
+    display: block;
+    font-variant: small-caps;
+    line-height: 30px;
+    text-decoration: none;
+    color: rgb(58, 58, 58);
     transition: all 0.3s ease-in-out;
 }
 
-.card:hover{
+#contact-me li a {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+}
+#contact-me li a:hover {
+    text-decoration: underline rgb(58, 58, 58);
+}
+
+.card {
+    position: relative;
+}
+
+a img:hover{
     box-shadow: inset 0px 0px 8px pink, 0 0 8px pink;
 }
 
@@ -106,3 +125,81 @@ a img {
     border: 2px dashed pink;
     background-color: rgba(255, 255, 255, 0.85);
 }
+
+@media screen and (min-width: 992px) {
+    h2 {
+        font-size: 200%;
+        border-right: 3px solid rgb(58, 58, 58);
+        padding-right: 10px;
+        border-bottom: none;
+    }
+    
+    #my-work{
+        display:flex;
+        flex-direction: row;
+    }
+    
+    #about-me{
+        display: flex;
+    }
+    
+    #contact-me {
+        display: flex;
+    }
+    
+    #contact-me ul {
+        justify-content: space-evenly;
+    }
+    
+    .card {
+        padding: 5px;
+    }
+
+    .col-left {
+        width: 25%;
+        text-align: end;
+    }
+    
+    .col-right {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+    
+    .col-right .large {
+        width: 100%;
+    }
+
+    .col-right .small {
+        width: 50%;
+    }
+  }
+
+  
+ @media screen and (min-width: 768px) {
+    #my-work{
+        display:flex;
+    }
+    .card {
+        padding: 5px;
+    }
+    .col-right {
+        margin-left: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+    
+    .col-right .large {
+        width: 100%;
+    }
+
+    .col-right .small {
+        width: 50%;
+    }
+
+    #contact-me ul{
+        justify-content: space-evenly;
+    }
+  }
