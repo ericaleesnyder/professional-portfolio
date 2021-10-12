@@ -1,6 +1,10 @@
 # Professional-Portfolio
 
 ## Description
+
+The deployed application can be accessed via this link: https://ericaleesnyder.github.io/professional-portfolio/
+
+
 For this project, we were tasked with creating a professional portfolio that included:
 - Functioning intra-page links with smooth scroll
 - Sections for About Me, My Work, and Contact Me
